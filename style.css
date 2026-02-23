@@ -1,0 +1,128 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding: 20px 40px;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 120px;
+}
+
+.nav {
+    text-decoration: none;
+    color: #17233D;
+    font-size: 14px;
+    letter-spacing: 0.88px;
+}
+
+.button-header {
+    background-color: #6FBF44;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* ===== MAIN ===== */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* ===== IMAGEM ===== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+}
+
+/* ===== TEXTO ===== */
+
+section {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 62px;
+    line-height: 82px;
+    color: #161A49;
+}
+
+.txt1 {
+    margin: 40px 0;
+    font-size: 18px;
+    line-height: 33px;
+    color: #4B505A;
+}
+
+.txt2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6FBF44;
+    text-decoration: none;
+}
+
+/* ========================== */
+/* 📱 RESPONSIVO */
+/* ========================== */
+
+@media (max-width: 710px) {
+
+    body {
+        padding: 20px;
+    }
+
+    header {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .txt1 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .txt2 {
+        display: inline-block;
+        margin-top: 20px;
+    }
+}
